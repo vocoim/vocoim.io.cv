@@ -10,16 +10,21 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+<div class="modal-window">
+    <div class="modal-content">
+        <img src="images/photo_2021-11-12%2016.10.55.jpeg" alt="photo">
+    </div>
+</div>
 <header>
     <div class="wrapper">
         <div class="personal-info">
-            <img src="images/photo_2021-11-12%2016.10.55.jpeg" alt="photo">
+            <img id="modalImage" src="images/photo_2021-11-12%2016.10.55.jpeg" alt="photo">
             <div class="personal-info_title">
-                <p class="personal-info_title-name">Viktoriia Tereshchenko </p>
+                <p class="personal-info_title-name">Vika Tereshchenko </p>
                 <p class="personal-info_title-position">Intern / Trainee Front-end developer</p>
                 <div class="personal-info_contacts">
                     Kyiv, Ukraine <br>
-                    +38 (093) 812 99 65 <br>
+                    +38 (096) 478 98 04 <br>
                     vtereshchenko05@gmail.com
                 </div>
                 <div class="personal-info_links">
@@ -92,39 +97,53 @@
     <div class="wrapper">
         <h2 class="list-title">education</h2>
         <div class="items-list">
-            <div class="items-list_title">
-                <h4>CS50: Web programming in Python and JavaScript (now)</h4>
-                <button class="expand-button"><i class="fas fa-chevron-down"></i></button>
+            <div class="items-list_container">
+                <div class="items-list_title">
+                    <h4>CS50: Web programming in Python and JavaScript (now)</h4>
+                    <button class="expand-button"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-up"></i>
+                    </button>
+                </div>
+                <div class="hidden-text">HTML5, CSS, Javascript, Python (including Django), SQL, UI, QA, CI/CD.</div>
             </div>
-            <div class="hidden-text">HTML5, CSS, Javascript, Python (including Django), SQL, UI, QA, CI/CD.</div>
-            <div class="items-list_title">
-                <h4>Layout designer expertise - HTML, CSS, JavaScript (27 hours)</h4>
-                <button class="expand-button"><i class="fas fa-chevron-down"></i></button>
+            <div class="items-list_container">
+                <div class="items-list_title">
+                    <h4>Layout designer expertise - HTML, CSS, JavaScript (27 hours)</h4>
+                    <button class="expand-button"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-up"></i>
+                    </button>
+                </div>
+                <div class="hidden-text">HTML5, CSS, FlexBox, animation, Photoshop, Figma, Zeplin, BEM, Bootstrap 4, CSS
+                    Grid, Adaptive and
+                    cross-browser compatibility, SCSS, Javascript, Photoshop, jQuery, Pepper, FancyBox, ParollerJS,
+                    ParallaxJS,
+                    ScrollMagic, SwiperJS.
+                </div>
             </div>
-            <div class="hidden-text">HTML5, CSS, FlexBox, animation, Photoshop, Figma, Zeplin, BEM, Bootstrap 4, CSS
-                Grid, Adaptive and
-                cross-browser compatibility, SCSS, Javascript, Photoshop, jQuery, Pepper, FancyBox, ParollerJS,
-                ParallaxJS,
-                ScrollMagic, SwiperJS.
+            <div class="items-list_container">
+                <div class="items-list_title">
+                    <h4>Learning the layout: HTML, CSS and something else (18 hours)</h4>
+                    <button class="expand-button"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-up"></i>
+                    </button>
+                </div>
+                <div class="hidden-text">HTML5, CSS, FlexBox, animation, Adaptive and cross-browser compatibility, SCSS,
+                    Pixel Perfect.
+                </div>
             </div>
-            <div class="items-list_title">
-                <h4>Learning the layout: HTML, CSS and something else (18 hours)</h4>
-                <button class="expand-button"><i class="fas fa-chevron-down"></i></button>
+            <div class="items-list_container">
+                <div class="items-list_title">
+                    <h4> HTML5, CSS3, FlexBox. Site layout from scratch (8 hours) </h4>
+                    <button class="expand-button"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-up"></i>
+                    </button>
+                </div>
+                <div class="hidden-text">HTML5, СSS, FlexBox.</div>
             </div>
-            <div class="hidden-text">HTML5, CSS, FlexBox, animation, Adaptive and cross-browser compatibility, SCSS,
-                Pixel Perfect.
+            <div class="items-list_container">
+                <div class="items-list_title">
+                    <h4>Kyiv National Economic University (2013 - 2019)</h4>
+                    <button class="expand-button"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-up"></i>
+                    </button>
+                </div>
+                <div class="hidden-text">Institute of law. Status: Master (average score - 4,6).</div>
             </div>
-
-            <div class="items-list_title">
-                <h4> HTML5, CSS3, FlexBox. Site layout from scratch (8 hours) </h4>
-                <button class="expand-button"><i class="fas fa-chevron-down"></i></button>
-            </div>
-            <div class="hidden-text">HTML5, СSS, FlexBox.</div>
-            <div class="items-list_title">
-                <h4>Kyiv National Economic University (2013 - 2019)</h4>
-                <button class="expand-button"><i class="fas fa-chevron-down"></i></button>
-            </div>
-            <div class="hidden-text">Institute of law. Status: Master (average score - 4,6).</div>
         </div>
     </div>
 </section>
@@ -132,27 +151,33 @@
     <div class="wrapper">
         <h2 class="list-title">work experience</h2>
         <div class="items-list">
-            <div class="items-list_title"><h4>Recruitment Specialist </h4>
-                <button class="expand-button"><i class="fas fa-chevron-right"></i></button>
+            <div class="items-list_container">
+                <div class="items-list_position">
+                <div class="items-list_title"><h4>Recruitment Specialist </h4>
+                    <button class="expand-button"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-left"></i></button>
+                </div>
+                <h5> Luxoft a DXC Company <br>
+                    (July 2021 - December 2021)
+                </h5></div>
+                <div class="hidden-text"> Full-life Cycle Recruiting, Technical Recruiting, IT Recruitment. <br>
+                    Main responsibilities: search and contact of candidates, management of negotiations, support of the
+                    candidate at all stages.
+                </div>
             </div>
-            <h5> Luxoft a DXC Company <br>
-                (July 2021 - December 2021)
-            </h5>
-            <div class="hidden-text"> Full-life Cycle Recruiting, Technical Recruiting, IT Recruitment. <br>
-                Main responsibilities: search and contact of candidates, management of negotiations, support of the
-                candidate at
-                all stages.
-            </div>
-            <div class="items-list_title">
-                <h4>Lawyer, assistant of attorney</h4>
-                <button class="expand-button"><i class="fas fa-chevron-right"></i></button>
-            </div>
-            <h5>Attorney association “Vis Probitas” <br>
-                (November 2017 - June 2021) </h5>
-            <div class="hidden-text">Representation of interests, negotiation, consulting. <br>
-                Main responsibilities: representation in courts, drafting of procedural documents, consulting,
-                verification of
-                contracts, registration of business entities.
+            <div class="items-list_container">
+                <div class="items-list_position">
+                <div class="items-list_title">
+                    <h4>Lawyer, assistant of attorney</h4>
+                    <button class="expand-button"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-left"></i></button>
+                </div>
+                <h5>Attorney association “Vis Probitas” <br>
+                    (November 2017 - June 2021) </h5>
+                </div>
+                <div class="hidden-text">Representation of interests, negotiation, consulting. <br>
+                    Main responsibilities: representation in courts, drafting of procedural documents, consulting,
+                    verification of
+                    contracts, registration of business entities.
+                </div>
             </div>
         </div>
 </section>
