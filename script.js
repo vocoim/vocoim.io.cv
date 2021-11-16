@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", ready);
 
-function ready () {
+function ready() {
     window.addEventListener('scroll', function () {
         const el = document.querySelector(".languages-list");
         const elDistance = el.getBoundingClientRect().top;
-       if(window.innerHeight > elDistance) {
-           document.querySelectorAll('span').forEach(abc => abc.style.animationPlayState = 'running');
-       }
+        if (window.innerHeight > elDistance) {
+            document.querySelectorAll('span').forEach(abc => abc.style.animationPlayState = 'running');
+        }
     })
     show();
     imageAnimation();
@@ -24,7 +24,7 @@ function show() {
     }))
 }
 
-function imageAnimation () {
+function imageAnimation() {
     const image = document.getElementById('modalImage');
     image.addEventListener('mouseenter', event => {
         image.style.animationPlayState = 'running';
@@ -35,17 +35,17 @@ function imageAnimation () {
     })
 }
 
-function imageModal () {
+function imageModal() {
     const imageMod = document.getElementById('modalImage');
     const modal = document.querySelector('.modal-window');
 
     imageMod.addEventListener('click', touch => {
         modal.style.display = 'block';
-        })
+    })
 
-        modal.addEventListener('click', hideModal => {
-            modal.style.display = 'none';
-        })
+    modal.addEventListener('click', hideModal => {
+        modal.style.display = 'none';
+    })
 }
 
 
