@@ -44,7 +44,7 @@ h5 {
 
 .personal-info {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     position: relative;
     z-index: 0;
@@ -333,7 +333,7 @@ footer {
 
     body {
         width: 100%;
-        margin: 15px;
+        margin: 0;
     }
 
     .personal-info {
@@ -369,8 +369,11 @@ footer {
 
     .work-experience .wrapper .items-list .open .items-list_position {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: nowrap;
+        flex-shrink: 1;
+        flex-grow: 0;
+        flex-basis: 0;
     }
 
     .work-experience .wrapper .items-list .items-list_container .items-list_position {
